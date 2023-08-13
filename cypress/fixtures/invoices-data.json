@@ -1,0 +1,225 @@
+{
+    "totalAmount": 1795.0,
+    "totalAmountPaid": 625.0,
+    "totalAmountDue": 1170.0,
+    "totalBalance": 1170.0,
+    "currency": "EUR",
+    "invoices": [
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2021-09-27",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": -9,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2021-10-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2021-11-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2021-12-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2022-01-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2022-02-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2022-03-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2022-04-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2022-05-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-09-21",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Invoice",
+            "documentNumber": "2",
+            "dueDate": "2022-06-06",
+            "amount": 62.5,
+            "amountPaid": 62.5,
+            "amountDue": 0.0,
+            "balance": 0.0,
+            "daysUntilDue": 1,
+            "items": [
+                {
+                    "description": "",
+                    "amount": 62.5
+                }
+            ]
+        },
+        {
+            "date": "2021-10-05",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Non-contract invoice",
+            "documentNumber": "1452",
+            "dueDate": "2021-10-09",
+            "amount": 585,
+            "amountPaid": 0,
+            "amountDue": 585,
+            "balance": 585,
+            "daysUntilDue": -28,
+            "items": [
+                {
+                    "description": "Enseñanza - Blanca",
+                    "amount": 585
+                }
+            ]
+        },
+        {
+            "date": "2021-10-26",
+            "studentName": "VELAZQUEZ GARCIA Francisco Manuel",
+            "description": "Non-contract invoice",
+            "documentNumber": "1899",
+            "dueDate": "2021-10-30",
+            "amount": 585,
+            "amountPaid": 0,
+            "amountDue": 585,
+            "balance": 585,
+            "daysUntilDue": -7,
+            "items": [
+                {
+                    "description": "Enseñanza - Blanca",
+                    "amount": 585
+                }
+            ]
+        }
+    ]
+}
