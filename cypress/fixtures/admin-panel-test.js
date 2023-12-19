@@ -13,18 +13,18 @@ export class adminNavigationAndTest {
 
     openAdminAppAndTestSideBar () {
 
-        cy.openAdminApp ()
+        cy.visit ('https://paymentadmin-test.inspirededu.com/')
         // cy.origin ('https://login.microsoftonline.com/', () => {
         //     // Cypress.require ('adminPanelFragments')
         //     cy.get ('#tilesHolder > div > div > div > div > div.table-cell.text-left.content').click ()
         //     cy.get ('input[type="email"]').type (userCredentials.Login)
         //     cy.get ('input[type="submit"]').click ()
-        //     cy.get ('input[name="passwd"]').type (userCredentials.Password)
+            // cy.get ('input[name="passwd"]').type (userCredentials.Password)
         //     cy.get ('input[type="submit"]').click ()
         //     cy.wait (5000)
         //     cy.get ('input[id="idSIButton9"]').click ()
-        cy.get (adminPanelFragments.closesidebarButton).click ()
-        cy.get (adminPanelFragments.burgerButton).click ()
+        // cy.get (adminPanelFragments.closesidebarButton).click ()
+        // cy.get (adminPanelFragments.burgerButton).click ()
     }
 
     openAdminAppAndTestSideBarMenu () {

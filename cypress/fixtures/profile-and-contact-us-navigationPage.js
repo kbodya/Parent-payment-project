@@ -5,7 +5,7 @@ const profileContactUs = require ('../e2e/page-objects/profile-and-contact-us')
 export class navigateToProfileContactPage {
 
     profileToCheckDataElements() {
-        cy.intercept ('GET', 'https://eebot-paymentportal-uat.inspirededu.com/api/profile', {fixture: 'profile-data.json'})
+        cy.intercept ('GET', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/profile', {fixture: 'profile-data.json'})
         //cy.request ('GET', 'https://dummyschool-paymentportal-test.inspirededu.com/api/profile', {fixture: 'profile-data.json'})
         cy.openPortalApplication()
         cy.get(headerFragment.accountIcon).click()
@@ -14,7 +14,7 @@ export class navigateToProfileContactPage {
         //     expect (qaresponse.statusCode).to.equal (200)
         //     expect(qaresponse).to.include.keys('headers', 'duration')
         cy.contains ('Please Contact us to update your profile details.').should ('be.visible')
-        cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/profile')
+        cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/profile')
     
     }
 
@@ -77,7 +77,7 @@ contactUspageFourTest () {
 } 
 
 contactUspageFiveTest () {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com//api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com/api/contact-us').as ('postContact')
     cy.openPortalApplication()
     cy.get(headerFragment.accountIcon).click()
@@ -97,7 +97,7 @@ contactUspageFiveTest () {
         // cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/')
 
     })    
-    cy.url().should ('contain', 'https://eebot-paymentportal-uat.inspirededu.com/')
+    cy.url().should ('contain', 'https://rhsydney-paymentportal-uat.inspirededu.com/?academicYear=2022')
 }
 
 contactUspageSixTest () {
@@ -120,7 +120,7 @@ contactUspageSevenTest () {
 }
 
 contactUspageEigthTest () {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com/api/contact-us').as ('postContact')
     cy.openPortalApplication()
     cy.get(headerFragment.accountIcon).click()
@@ -128,7 +128,7 @@ contactUspageEigthTest () {
     cy.wait (1000)
     cy.get (profileContactUs.contactUsButton).click({force: true})
     cy.wait (3000)
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/contact-us')
+    cy.url().should ('eq', 'hhttps://rhsydney-paymentportal-uat.inspirededu.com/contact-us')
     //cy.get (profileContactUs.listArrowFirst).should ('be.visible')
     cy.get (profileContactUs.dropDownButton).click()
     cy.get ('[data-value="3"]').click()
@@ -142,12 +142,12 @@ contactUspageEigthTest () {
     })
     cy.contains ('Your query was sent successfully. Thanks.').should ('be.visible')
     cy.get (profileContactUs.successBlock).should ('be.visible')
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/')
+    cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/?academicYear=2022')
 
 }
 
 contactUspageNinTest () {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com/api/contact-us').as ('postContact')
     cy.openPortalApplication()
     cy.get(headerFragment.accountIcon).click()
@@ -177,12 +177,12 @@ contactUspageNinTest () {
         //expect (xhr.response.body).to.equal ('')})
     })
     cy.contains ('Your query was sent successfully. Thanks.').should ('be.visible')
-    cy.url().should ('contain', 'https://eebot-paymentportal-uat.inspirededu.com/')
+    cy.url().should ('contain', 'https://rhsydney-paymentportal-uat.inspirededu.com/?academicYear=2022')
     cy.get (profileContactUs.successBlock).should ('be.visible')
 }
 
 contactUspageTenTest () {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com/api/contact-us').as ('postContact')
     cy.openPortalApplication()
     cy.get(headerFragment.accountIcon).click()
@@ -200,11 +200,11 @@ contactUspageTenTest () {
     cy.contains ('Your query was sent successfully. Thanks.').should ('be.visible')
     cy.get (profileContactUs.successBlock).should ('be.visible')
 })
-cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/')
+cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/?academicYear=2022')
 }
 
 contactUspageELTest () {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com/api/contact-us').as ('postContact')
     cy.openPortalApplication()
     const filepath = ('../../../../../../../Users/bohdan.kalinichenko/Desktop/Inspired-Edu-project/Parent-payment-project/cypress/fixtures/Sample-image-five-mb.jpg')
@@ -212,7 +212,7 @@ contactUspageELTest () {
     cy.get (headerFragment.profileDropDown).click ()
     cy.get (profileContactUs.contactUsButton).click({force: true})
     cy.wait (3000)
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/contact-us')
+    cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/contact-us')
     // cy.get (profileContactUs.listArrowFirst).should ('be.visible')
     cy.get (profileContactUs.dropDownButton).click({force: true})
     cy.get ('[data-value="2"]').click()
@@ -225,13 +225,13 @@ contactUspageELTest () {
     cy.wait ('@postContact').then ( xhr => {
         //console.log (xhr)
         expect (xhr.response.statusCode).to.equal (200)})
-        cy.url().should ('contain', 'https://eebot-paymentportal-uat.inspirededu.com/')
+        cy.url().should ('contain', 'https://rhsydney-paymentportal-uat.inspirededu.com/')
     cy.contains ('Your query was sent successfully. Thanks.').should ('be.visible')
     cy.get (profileContactUs.successBlock).should ('be.visible')
 }
 
 contactUspageTLTest () {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com/api/contact-us').as ('postContact')
     cy.openPortalApplication()
     const filepath = ('../../../../../../../Users/bohdan.kalinichenko/Desktop/Inspired-Edu-project/Parent-payment-project/cypress/fixtures/Sample-image-five-mb.jpg')
@@ -244,7 +244,7 @@ contactUspageTLTest () {
     cy.get ('[data-value="2"]').click()
     cy.contains ('Upload File').click().selectFile (filepath) 
     cy.contains ('Complete').should ('be.visible')   
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/contact-us')
+    cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/contact-us')
     cy.wait (3000)
     cy.get (profileContactUs.fieldType).type (profileContactUs.validQtyText)
     cy.get (profileContactUs.submitButton).click()
@@ -253,7 +253,7 @@ contactUspageTLTest () {
     cy.wait ('@postContact').then ( xhr => {
         //console.log (xhr)
         expect (xhr.response.statusCode).to.equal (200)})
-        cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/')
+        cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/?academicYear=2022')
         cy.contains ('Your query was sent successfully. Thanks.').should ('be.visible')
     cy.get (profileContactUs.successBlock).should ('be.visible')
 }
@@ -289,7 +289,7 @@ contactUsPagePosTest () {
     cy.wait (2000)
     cy.get (profileContactUs.contactUsButton).click({force: true})
     cy.wait (2000)
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/contact-us')
+    cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/contact-us')
     cy.get (profileContactUs.dropDownButton).click()
     cy.get ('[data-value="3"]').click()
     cy.get (profileContactUs.fieldType).type (" ")

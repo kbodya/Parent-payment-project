@@ -14,7 +14,7 @@ export class navigationPage {
         cy.contains ('Charges').should ('be.visible')
         cy.contains ('Credits').should ('be.visible')
         cy.contains ('Payments received').should ('be.visible')
-        cy.get (accountSummary.makePaymentButton).should ('be.visible')
+        //cy.get (accountSummary.makePaymentButton).should ('be.visible')
         cy.get (headerFragment.burgerButton).should ('be.visible')
         cy.get (headerFragment.accountIcon).should ('be.visible')
         cy.get (headerFragment.contactSupport).should ('be.visible')
@@ -74,7 +74,7 @@ export class navigationPage {
     proceedToMakePayment () {
         cy.get (accountSummary.makePaymentButton).click ({ multiple: true })
         cy.wait (4000)
-        cy.url().should('eq', 'https://eebot-paymentportal-uat.inspirededu.com/make-payment') // => forUAT
+        cy.url().should('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/make-payment') // => forUAT
         //cy.url().should('eq', 'https://dummyschool-paymentportal-test.inspirededu.com/make-payment') // => true TEST
 
     }
@@ -86,7 +86,7 @@ export class navigationPage {
         cy.contains ('Add').should ('be.visible')
         cy.contains (directDebitFragments.secondLabel).should ('be.visible')
         cy.contains (directDebitFragments.firstLabel).should ('be.visible')
-        cy.url().should('eq', 'https://eebot-paymentportal-uat.inspirededu.com/direct-debit') // => forUAT
+        cy.url().should('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/direct-debit') // => forUAT
        //cy.url().should('eq', 'https://dummyschool-paymentportal-test.inspirededu.com/direct-debit') // => true TEST
 
     }

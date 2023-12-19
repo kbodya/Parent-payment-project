@@ -1,5 +1,5 @@
 const accountSummary = {
-    get makePaymentButton () {return (':nth-child(3) > .MuiPaper-root > .css-fb02d8 > .MuiBox-root > .MuiButtonBase-root')},
+    get makePaymentButton () {return ('[href="/make-payment"] > .MuiButtonBase-root > .MuiListItemText-root > .MuiTypography-root')},
     get firstBlock () {return (':nth-child(1) > .MuiPaper-root > .MuiBox-root')},
     get secondBlock () {return ('.MuiGrid-container > :nth-child(2) > .MuiPaper-root > .MuiBox-root')},
     get thirdBlock () {return ('div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-15j76c0 > div > div > ul')},

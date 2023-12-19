@@ -32,15 +32,15 @@ const noFoundPage = require ('../e2e/page-objects/not-found-page')
 
 
 Cypress.Commands.add ('openPortalApplication', () => {
-    cy.visit ('https://eebot-paymentportal-uat.inspirededu.com/')
+    cy.visit ('https://rhsydney-paymentportal-uat.inspirededu.com/')
     //cy.visit ('https://rhsydney-paymentportal-uat.inspirededu.com/')
 })
 
 Cypress.Commands.add ('openNotExistingHomePage', () => {
-    cy.visit ('https://eebot-paymentportal-uat.inspirededu.com/')
+    cy.visit ('hhttps://rhsydney-paymentportal-uat.inspirededu.com/')
     //cy.visit ('https://rhsydney-paymentportal-uat.inspirededu.com/')
     cy.wait (2000)
-    cy.visit ('https://eebot-paymentportal-uat.inspirededu.com/test')
+    cy.visit ('https://rhsydney-paymentportal-uat.inspirededu.com/test')
     //cy.visit ('https://rhsydney-paymentportal-uat.inspirededu.com/test/')
 })
 
@@ -77,7 +77,7 @@ Cypress.Commands.add ('ContactUsSecondPrefillData', () => {
 })
 
 Cypress.Commands.add ('ContactUsMain', () => {
-    cy.intercept ('POST', 'https://eebot-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
+    cy.intercept ('POST', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/contact-us').as ('postContact')
     //cy.intercept ('POST', 'https://dummyschool-paymentportal-test.inspirededu.com//api/contact-us').as ('postContact')
     const filepath = ('../../../../../../../Users/bohdan.kalinichenko/Desktop/Inspired-Edu-project/Parent-payment-project/cypress/fixtures/Sample-image-five-mb.jpg')
     cy.get(headerFragment.accountIcon).click()
@@ -98,7 +98,7 @@ Cypress.Commands.add ('ContactUsMain', () => {
         expect (xhr.response.statusCode).to.equal (200)})
     cy.contains ('Your query was sent successfully. Thanks.').should ('be.visible')
     cy.get (profileContactUs.successBlock).should ('be.visible')
-    cy.url().should('eq', 'https://eebot-paymentportal-uat.inspirededu.com/') // => forUAT
+    cy.url().should('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/') // => forUAT
 
 })
 
@@ -116,8 +116,8 @@ const userData = {
 }
 
 const userDataUAT = {
-    'Username': 'escolaeleva1@uat.com',
-    'Password': 'PaymentPortal123!'
+    'Username': 'Craig',
+    'Password': 'Inspired2023!'
 }
 
 Cypress.Commands.add ('LoginToiSAMS', () => {
@@ -142,11 +142,11 @@ Cypress.Commands.add ('SwitchToEnglish', () => {
     cy.get('.MuiDialogContent-root > .MuiList-root > :nth-child(1) > .MuiButtonBase-root').click ()
 })
 
-Cypress.Commands.add ('openAdminApp', () => {
+Cypress.Commands.add ('adminAppOpen', () => {
     cy.visit ('https://paymentadmin-test.inspirededu.com/')
 })
 
-const BaseURL = 'https://paymentadmin-test.inspirededu.com/'
+// const BaseURL = 'https://paymentadmin-test.inspirededu.com/'
 
 
 // Cypress.Commands.add('iframeCustom', { prevSubject: 'element' }, ($iframe) => {

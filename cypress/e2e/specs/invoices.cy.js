@@ -13,12 +13,12 @@ describe ('User is able to open Invoices', () => {
         //  //cy.reload(true);
         // cy.exec('npm cache clear --force') 
         // cy.LoginToiSAMS ()
-        cy.intercept ('GET', 'https://eebot-paymentportal-uat.inspirededu.com//api/invoices',  
+        cy.intercept ('GET', 'https://rhsydney-paymentportal-uat.inspirededu.com/api/invoices',  
         {fixture: 'invoices-data.json',
         statusCode: 200,
         headers: {
             'method': 'GET',
-            'authority': 'eebot-paymentportal-uat.inspirededu.com'
+            'authority': 'rhsydney-paymentportal-uat.inspirededu.com/'
         }
         })
     })
@@ -37,7 +37,7 @@ describe ('User is able to open Invoices', () => {
     it ('User is able to Proceed to MakePayment page from Invoices', () => {
         cy.get (invoicesFragments.makePayment).click ()
         cy.wait (3000)
-        cy.url().should('eq', 'https://eebot-paymentportal-uat.inspirededu.com/make-payment') // => true
+        cy.url().should('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/make-payment') // => true
 
     })
 
@@ -46,7 +46,7 @@ describe ('User is able to open Invoices', () => {
         cy.wait (3000)
         cy.get (headerFragment.burgerButton).click()
         cy.contains ('Invoices').click()
-        cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/invoices')
+        cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/invoices')
         cy.get (invoicesFragments.payInvoiceButton).click ()
         cy.wait (1000)
         cy.get (invoicesFragments.makePaymentButton).click ()
@@ -58,7 +58,7 @@ describe ('User is able to open Invoices', () => {
         cy.wait (2000)
         cy.get (headerFragment.burgerButton).click()
         cy.contains ('Invoices').click()
-        cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/invoices')
+        cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/invoices')
         cy.wait (2000)
         cy.get (invoicesFragments.payInvoiceButton).click ()
         cy.contains ('Please choose an amount').should ('be.visible')

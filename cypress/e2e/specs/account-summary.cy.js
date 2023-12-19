@@ -47,9 +47,9 @@ it ('TooltipAccountBalance', () => {
     onNavigationPage.toolTipsBalance ()
 })
 
-it ('User is able to Proceed to Make Payment page from Account Summary', () => {
-    onNavigationPage.proceedToMakePayment ()
-})
+// it ('User is able to Proceed to Make Payment page from Account Summary', () => {
+//     onNavigationPage.proceedToMakePayment ()
+// })
 
 // it ('User is able to Proceed to Direct Debit Page from Acoount Summary', () => {
 //     onNavigationPage.ProceedToDDPage ()

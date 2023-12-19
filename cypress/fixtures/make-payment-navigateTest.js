@@ -12,7 +12,7 @@ export class  navigateToMakePaymentPage {
 
 PositiveTestOne () {
     cy.OpenMakePaymentTest()
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/make-payment') 
+    cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/make-payment') 
     cy.wait (4000)
     cy.makePaymentCSS ()
     cy.get(makePayment.makePaymentButton).click().invoke('removeAttr', 'target')
@@ -31,7 +31,7 @@ PositiveTestOne () {
 
 PositiveTestTwo () {
     cy.OpenMakePaymentTest()
-    cy.url().should ('eq', 'https://eebot-paymentportal-uat.inspirededu.com/make-payment') 
+    cy.url().should ('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/make-payment') 
     cy.wait (2000)
     cy.get(makePayment.radioPaymentDueNow).click()
     .invoke('removeAttr', 'target')
@@ -150,7 +150,7 @@ PostTestMakePaymentCustom () {
         cy.contains (successPageFragments.secondText).should ('be.visible')
         cy.get (successPageFragments.goToPaymentsButton).click ()
         cy.wait (2000)
-        cy.url().should('eq', 'https://eebot-paymentportal-uat.inspirededu.com/payments') // => forUAT
+        cy.url().should('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/payments') // => forUAT
         //cy.url().should ('eq', 'https://dummyschool-paymentportal-test.inspirededu.com/payments') // => forTEST
 
     Cypress.on('uncaught:exception', (err, runnable) => {
@@ -181,7 +181,7 @@ PostTestMakePaymentCustom () {
             return false
           })
     })
-    cy.url().should('eq', 'https://eebot-paymentportal-uat.inspirededu.com/make-payment') // => forUAT
+    cy.url().should('eq', 'https://rhsydney-paymentportal-uat.inspirededu.com/make-payment') // => forUAT
   }
 
   MakePaymentTestStripe () {
